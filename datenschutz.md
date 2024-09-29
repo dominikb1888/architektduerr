@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-	<head>
-		<title>architektduerr</title>
-		<meta name="robots" content="max-image-preview:large">
-		<link rel="canonical" href="https://architektduerr.de/">
-		<meta property="og:locale" content="de_DE">
-		<meta property="og:site_name" content="Architekt Duerr - Architekt Duerr">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Home - Architekt Duerr">
-		<meta property="og:url" content="https://architektduerr.de/">
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="architektduerr">
-		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/architektduerr.de\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/architektduerr.de\/#listItem","position":1,"name":"Zu Hause"}]},{"@type":"Organization","@id":"https:\/\/architektduerr.de\/#organization","name":"Architekt Duerr","url":"https:\/\/architektduerr.de\/"},{"@type":"WebPage","@id":"https:\/\/architektduerr.de\/#webpage","url":"https:\/\/architektduerr.de\/","name":"Home - Architekt Duerr","inLanguage":"de-DE","isPartOf":{"@id":"https:\/\/architektduerr.de\/#website"},"breadcrumb":{"@id":"https:\/\/architektduerr.de\/#breadcrumblist"},"datePublished":"2009-12-22T03:32:08+01:00","dateModified":"2024-05-30T14:44:53+02:00"},{"@type":"WebSite","@id":"https:\/\/architektduerr.de\/#website","url":"https:\/\/architektduerr.de\/","name":"Architekt Duerr","description":"Architekt Duerr","inLanguage":"de-DE","publisher":{"@id":"https:\/\/architektduerr.de\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/architektduerr.de\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
-		</script>
-		<script type="text/javascript" src="script.js"></script>
-		<link rel="stylesheet" href="reset.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-		
-	</head>
-<body>
+---
+layout: default
+title: Datenschutz
+---
 <h1>Datenschutzerklärung</h1>
 
 		Verantwortliche Stelle im Sinne der Datenschutzgesetze ist:
@@ -43,6 +26,3 @@
 		Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z. B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 		<h2>Fragen an den Datenschutzbeauftragten</h2>
 		Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an unseren Datenschutzbeauftragten:Architekt Dipl. Ing (FH) Franz Dürr
-
-		</body>
-		</html>
