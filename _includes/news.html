@@ -1,0 +1,12 @@
+<section id="news">
+    <h2>News</h2>
+    <div class="grid">
+    {% assign news_posts = site.posts | where: "category", category | sort: "date" | reverse %}
+    {% for post in news_posts limit: 4 %}
+        <a href="{{ post.url }}">
+          <img src="{{ post.img }}">
+          <p class="news-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        </a>
+    {% endfor %}
+</div>
+</section>
