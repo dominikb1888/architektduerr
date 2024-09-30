@@ -1,5 +1,5 @@
 
-{% assign categories = site.pages | where: "path", "portfolio/" | map: "category" | uniq %}
+{% assign categories = site.pages | where: "path", "_portfolio/" | map: "category" | uniq %}
 
 {% for category in categories %}
   <section class="{{category}}">
@@ -17,7 +17,7 @@
             {% endif %}
   
               <a href="{{ post.url }}">
-                <img src="{{ post.image }}" alt="{{ post.title }}">
+                <img src="{{ post.img }}" alt="{{ post.title }}">
                 <h3>{{ post.title }}</h3>
               </a>
             </div>
