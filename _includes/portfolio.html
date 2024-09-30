@@ -1,5 +1,5 @@
 
-{% assign categories = site.pages | where: "path", "_portfolio/" | map: "category" | uniq %}
+{% assign categories = site.pages | where: "path", "portfolio/" | map: "category" | uniq %}
 
 {% for category in categories %}
   <section class="{{category}}">
@@ -10,10 +10,9 @@
         {% for post in site.pages %}
           {% if post.path contains 'portfolio/' and post.category == category %}
             
-            <!-- Close the current grid and start a new one every 3 items -->
             {% if counter != 0 and counter % 3 == 0 %}
-              </div> <!-- close the current grid -->
-              <div class="grid"> <!-- start a new grid -->
+              </div>
+              <div class="grid">
             {% endif %}
   
               <a href="{{ post.url }}">
