@@ -29,6 +29,48 @@
   </head>
   <body>
     {% include header.html %}
+	
+	<section id="news">
+		<h2>News</h2>
+		<div class="grid">
+		{% assign news_posts = site.posts | where: "category", category | sort: "date" | reverse %}
+		{% for post in news_posts limit: 4 %}
+			<a href="{{ post.url }}">
+			  <img src="{{ post.img }}">
+			  <p class="news-date">{{ post.date | date: "%B %d, %Y" }}</p>
+			</a>
+		{% endfor %}
+		</div>
+	</section>
+
+  {% assign categories = site.portfolio | map: "category" | uniq %}
+  {% for category in categories %}
+  <section id="{{category}}">
+	<a href="#top" class="up">&#8593;</a>
+    <h2>{{ category | capitalize }}</h2>
+		{% assign counter = 0 %}
+		<div class="grid">
+			{% for item in site.portfolio %}
+				{% if item.category == category %}
+
+
+				  <a href="{{ item.url }}">
+					<img src="{{ item.img }}" alt="{{ item.title }}">
+					<h3>{{ item.title }}</h3>
+				  </a>
+
+				<!-- Close the grid and start a new one after 3 items -->
+				{% if counter == 4 %}
+            		</div> <!-- Close the current grid -->
+            		<div class="portfolio-grid"> <!-- Start a new grid -->
+            	{% assign counter = 0 %} <!-- Reset the counter after 3 items -->
+          		{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	{% endfor %}
+	
     {{ content }}
 	{% include footer.html %}
   </body>
